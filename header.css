@@ -174,3 +174,11 @@ body{
 
 
 /** ---------- HEADER LINKS SLUT ---------- */
+
+/** footer */
+
+footer{
+  height: 200px;
+  width: 100%;
+  background-color: lightcoral;
+}
