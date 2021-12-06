@@ -1,0 +1,183 @@
+
+
+/* * ---------- IMAGE GALLERY - START ---------- */
+
+#gallery {
+    width: 100%;
+    padding-top: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    position: relative;
+}
+
+#imagelist {
+    display: flex;
+}
+
+#image {
+    aspect-ratio: 16/9;
+}
+
+#image1 {
+    width: 20%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+#image1:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+}
+
+.img1 {
+    background-image: url(https://source.unsplash.com/random/1920x1080);
+    background-size: cover;
+    animation: fadeIn 0.5s;
+}
+
+.img2 {
+    background-image: url(https://source.unsplash.com/user/erondu/1600x900);
+    background-size: cover;
+    animation: fadeIn 1s;
+}
+
+.img3 {
+
+    background-image: url(https://source.unsplash.com/daily/);
+    background-size: cover;
+    animation: fadeIn 0.5s;
+}
+
+.img4 {
+
+    background-image: url(https://source.unsplash.com/WLUHO9A_xik/1600x900);
+    background-size: cover;
+    animation: fadeIn 0.5s;
+}
+
+.img5 {
+
+    background-image: url(https://source.unsplash.com/weekly?water);
+    background-size: cover;
+    animation: fadeIn 0.5s;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0.5;}
+  100% {opacity:1;}
+}
+
+
+/* * ---------- IMAGE GALLERY - SLUT ---------- */
+
+
+/** ---------- Image Gallery When Opened - START ---------- */
+
+/* The pink background and the element in it */
+
+#galleryOverlay {
+    position: fixed;
+    background-color: rgba(250, 128, 114, 0.767);
+    background-size: auto;
+    top: -5%;
+    width: 100%;
+    height: 110%;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(2px);
+}
+
+/* the inviceble layer which function as a quit button */
+
+#fotoframe{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    z-index: 10;
+}
+
+/* the Actual image */
+
+#foto {
+    position: absolute;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 16/9;
+    z-index: 15;
+    top: 5%;
+    left: 9%;
+    border: white 2px solid;
+    background-color: white;
+}
+
+/* Left and Right arrow of the Image gallery, changes image when clicked */
+
+#rightButton {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-image: url(arrow_right.svg);
+    background-size: cover;
+    top: 45%;
+    left: 101%;
+    z-index: 15;
+}
+
+#leftButton {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-image: url(arrow_left.svg);
+    background-size: cover;
+    top: 45%;
+    left: -8%;
+    z-index: 15;
+}
+
+/* Left and Right side of the Image gallery, changes image when clicked */
+
+#rightside {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    aspect-ratio: 1/1.125;
+    background-color: rgba(146, 228, 70, 0);
+    background-size: cover;
+    top: 12%;
+    left: 49%;
+    z-index: 16;
+}
+
+#leftside {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    aspect-ratio: 1/1.125;
+    background-color: rgba(228, 199, 70, 0);
+    background-size: cover;
+    top: 12%;
+    left: 9%;
+    z-index: 16;
+}
+
+/* Classes that are use to show or hide elements */
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+/** ---------- Image Gallery When Opened - SLUT ---------- */
